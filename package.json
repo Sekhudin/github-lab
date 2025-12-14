@@ -1,0 +1,16 @@
+{
+  "name": "github-lab",
+  "version": "1.0.0",
+  "description": "Playground for experimenting with GitHub Action and repository automation, check [Documentation](https://docs.github.com/en/actions).",
+  "main": "index.js",
+  "scripts": {
+    "build:actions": "./build.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@actions/core": "^2.0.1",
+    "@vercel/ncc": "^0.38.4"
+  }
+}

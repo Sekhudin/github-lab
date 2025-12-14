@@ -3,7 +3,7 @@ const core = require("@actions/core");
 const name = core.name;
 const sex = core.sex;
 
-console.log("ACTION >>> main.js is called!")
+console.log("ACTION >>> main.js is called!");
 console.log(`name: ${name}`);
 console.log(`sex: ${sex}`);
 

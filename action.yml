@@ -19,6 +19,6 @@ outputs:
 
 runs:
   using: node20
-  pre: './src/action/pre.js'
-  main: './src/action/main.js'
-  post:  './src/action/post.js'
+  pre: './dist/pre.js'
+  main: './dist/main.js'
+  post:  './dist/post.js'
