@@ -1,4 +1,4 @@
-const core = require("@action/core");
+const core = require("@actions/core");
 
 const name = core.name;
 const sex = core.sex;
