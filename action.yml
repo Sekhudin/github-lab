@@ -1,0 +1,24 @@
+name: action_console
+author: sekhudin
+description: an example of action.yml
+
+inputs:
+  name:
+    description: your fullname
+    required: true
+  age:
+    description: your age
+    required: false
+    default: '0'
+
+outputs:
+  author:
+    description: hardcode output value
+  result:
+    description: result of processes
+
+runs:
+  using: node20
+  pre: './src/action/pre.js'
+  main: './src/action/main.js'
+  post:  './src/action/post.js'

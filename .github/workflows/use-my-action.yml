@@ -1,0 +1,21 @@
+name: "use-my-action"
+
+on:
+  push:
+    branches:
+      - main
+      
+jobs:
+  console-me:
+    runs-on: ubuntu-latest
+    steps:
+      - id: action_me
+        uses: sekhudin/github-lab@main
+        with:
+          name: sekhudin
+          age: '20'
+          
+      - name: Print Author action_me
+        run: echo 'Author -> ${{ steps.action_me.outputs.author }}'
+      - name: Print Result action_me
+        run: echo 'Result -> ${{ steps.action_me.outputs.result }}'
