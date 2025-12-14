@@ -6,10 +6,10 @@ inputs:
   name:
     description: your fullname
     required: true
-  age:
+  sex:
     description: your age
     required: false
-    default: '0'
+    default: male
 
 outputs:
   author:
