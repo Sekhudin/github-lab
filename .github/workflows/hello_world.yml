@@ -10,3 +10,12 @@ jobs:
     steps:
     - name: Print Hello World
       run: echo Hello World!
+  
+  echo-per-os:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: Print text ${{ matrix.os }}
+        run: echo Hello ${{ matrix.os }} 
