@@ -9,7 +9,7 @@ inputs:
   sex:
     description: your age
     required: false
-    default: male
+    default: default-sex
 
 outputs:
   author:

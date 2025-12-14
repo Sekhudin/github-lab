@@ -27798,8 +27798,8 @@ module.exports = parseParams
 var __webpack_exports__ = {};
 const core = __nccwpck_require__(7484);
 
-const name = core.name;
-const sex = core.sex;
+const name = core.getInput("name", { required: true });
+const sex = core.getInput("sex", { required: false });
 
 console.log("ACTION >>> main.js is called!");
 console.log(`name: ${name}`);
